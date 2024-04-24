@@ -1,0 +1,74 @@
+.imagen{
+    width: 11%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+body{
+        /* Prefijo degradado para navegadores antiguos */
+        background: linear-gradient(to bottom, #ffcccc, #ff6666); /* Degradado de rojo claro a rojo oscuro */
+        margin: 0;
+        padding: 0;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    .row{
+      display: flex;
+      padding: 20px; /* Hacer que tenga bordes en los extremos tanto arriba como abajo */
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .column{
+      flex: 25%;
+      padding: 5px;
+      align-items: center;
+    }
+
+    .column img{
+      border-radius: 20px;
+    }
+
+    .column p{
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: large;
+    }
+
+    .column button{
+      margin-bottom: 3px;
+      border-radius: 10px;
+      background-color: transparent;
+      cursor: pointer;
+      width: 25%; /* ajusto el botón a la imagen */
+      margin-left: 15%; /* he podido centrar el botón con este comando */
+      border: #ff6666 5px; /* le tengo que añadir un borde para que el botón se haga transparente */
+    }
+
+    button:active{
+      transform: scale(.9); /* le añado una animación al botón que al darle hace fundión como de boton se hace mas pequeño */
+    }
+
+    .botonIMG{
+      width: 100%; /* tamaño de la imagen del botón */
+    }
+
+    @media (max-width: 600px){ /* Esto hace que cuando hagamos la página más pequeña se vea una columna */
+      .column{
+        flex: 100%;
+      }
+    }
+
+    @media (max-width: 800px){ /* Esto hace que cuando hagamos la página más pequeña se vea dos columnas */
+      .column{
+        flex: 50%;
+      }
+    }
