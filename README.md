@@ -1,0 +1,1 @@
+The main goal of our project is to provide users with the ability to conveniently and quickly access at my personal playlist on Apple Music and Spotify from a single web platform. This initiative will simplify the process of enjoying their favorite music by offering a unified and user-centered experience.
